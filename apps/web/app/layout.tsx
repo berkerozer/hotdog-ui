@@ -1,6 +1,7 @@
 import { Head } from "nextra/components";
 
 import "nextra-theme-docs/style.css";
+import "@repo/ui/styles.css";
 
 export const metadata = {
   // Define your metadata here
