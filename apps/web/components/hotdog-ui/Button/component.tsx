@@ -15,11 +15,17 @@ export interface ButtonProps
     | "muted"
     | "accent";
   variant?: "default" | "ghost" | "outline" | "dashed" | "text" | "link";
-  animation?: "ripple" | "pulse" | "none";
+  animation?: "ripple" | "pulse" | "shine" | "press" | "none";
+  size?: "default" | "sm" | "lg" | "icon";
+  shape?: "rounded" | "square" | "circle";
 }
 
 export const Button = ({
+  animation = "ripple",
   color = "primary",
+  variant = "default",
+  size = "default",
+  shape = "rounded",
   style,
   children,
   ...props
@@ -40,15 +46,19 @@ export const Button = ({
           ...style,
         } as React.CSSProperties
       }
+      animation={animation}
+      variant={variant}
+      size={size}
+      shape={shape}
       {...props}
     >
       {children}
-      {props.animation === "ripple" && (
+      {animation === "ripple" && (
         <Ripple
           className={
-            props.variant === "default"
+            variant === "default"
               ? "bg-white"
-              : props.variant === "link"
+              : variant === "link"
                 ? "bg-transparent"
                 : "bg-primary"
           }

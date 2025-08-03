@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/hotdog-ui";
+import { CodeBlock } from "@/components/ui/code-block";
 
 export const ButtonVariantsDemo = () => {
   return (
@@ -14,8 +15,8 @@ export const ButtonVariantsDemo = () => {
   );
 };
 
-export const ButtonVariantsDemoSource = `
-import React from "react";
+export const ButtonVariantsDemoSource = () => {
+  const code = `import React from "react";
 import { Button } from "@/components/hotdog-ui";
 
 export const ButtonVariantsDemo = () => {
@@ -29,5 +30,9 @@ export const ButtonVariantsDemo = () => {
       <Button variant="link">Link</Button>
     </div>
   );
+};`;
+
+  return (
+    <CodeBlock language="tsx" filename="ButtonVariantsDemo.tsx" code={code} />
+  );
 };
-`;

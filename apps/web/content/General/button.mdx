@@ -1,9 +1,22 @@
-import { Tabs } from "nextra/components";
+import { Tabs, Table } from "nextra/components";
 import { Colors, ComponentGenerator, Section } from "@/components/docs";
+import { Button } from "@/components/hotdog-ui";
 import {
   ButtonVariantsDemo,
   ButtonVariantsDemoSource,
-} from "@/components/demo/button/variants";
+} from "@/components/hotdog-ui/Button/demo/variants";
+import {
+  ButtonColorsDemo,
+  ButtonColorsDemoSource,
+} from "@/components/hotdog-ui/Button/demo/colors";
+import {
+  ButtonAnimationsDemo,
+  ButtonAnimationsDemoSource,
+} from "@/components/hotdog-ui/Button/demo/animations";
+import {
+  ButtonSizesDemo,
+  ButtonSizesDemoSource,
+} from "@/components/hotdog-ui/Button/demo/sizes";
 
 # Button
 
@@ -15,9 +28,9 @@ A button means an operation (or a series of operations). Clicking a button will 
 
 In Hotdog-Ui we provide 6 types of button.
 
-- 🔵 Primary button: used for the main action, there can be at most one primary button in a section.
+- 🔵 Default button: used for the main action, there can be at most one default button in a section.
 - ⚪️ Ghost button: used for a series of actions without priority.
-- 🔳 Outlined button: used for actions with a clear boundary.
+- 🔳 Outline button: used for actions with a clear boundary.
 - 😶 Dashed button: commonly used for adding more actions.
 - 🔤 Text button: used for the most secondary action.
 - 🔗 Link button: used for external links.
@@ -33,11 +46,123 @@ Colors are also customizable, you can choose from:
 
 ## Examples
 
+### Button Variants
+
+Button variants allow you to customize the appearance and behavior of buttons to fit different use cases.
+
 <Tabs items={["Preview", "Code"]}>
   <Tabs.Tab>
     <Section>
       <ButtonVariantsDemo />
     </Section>
   </Tabs.Tab>
-  <Tabs.Tab>{ButtonVariantsDemoSource}</Tabs.Tab>
+  <Tabs.Tab>
+    <ButtonVariantsDemoSource />
+  </Tabs.Tab>
 </Tabs>
+
+### Button Colors
+
+Button colors allow you to customize the appearance of buttons to fit different themes and branding requirements.
+
+<Tabs items={["Preview", "Code"]}>
+  <Tabs.Tab>
+    <Section>
+      <ButtonColorsDemo />
+    </Section>
+  </Tabs.Tab>
+  <Tabs.Tab>
+    <ButtonColorsDemoSource />
+  </Tabs.Tab>
+</Tabs>
+
+### Color And Variant Combinations
+
+<Section>
+  <ComponentGenerator
+    fields={["variant", "color"]}
+    values={[
+      ["default", "ghost", "outline", "dashed", "text", "link"],
+      ["primary", "secondary", "success", "warning", "danger", "info", "sharp"],
+    ]}
+    direction="horizontal"
+  >
+    <Button>Click Me!</Button>
+  </ComponentGenerator>
+</Section>
+
+### Animations
+
+Animation effects can enhance the user experience by providing visual feedback when interacting with buttons.
+
+<Tabs items={["Preview", "Code"]}>
+  <Tabs.Tab>
+    <Section>
+      <ButtonAnimationsDemo />
+    </Section>
+  </Tabs.Tab>
+  <Tabs.Tab>
+    <ButtonAnimationsDemoSource />
+  </Tabs.Tab>
+</Tabs>
+
+### Animation And Variant Combinations
+
+<Section>
+  <ComponentGenerator
+    fields={["variant", "animation"]}
+    values={[
+      ["default", "ghost", "outline", "dashed", "text", "link"],
+      ["ripple", "pulse", "shine", "press", "none"],
+    ]}
+    direction="vertical"
+  >
+    <Button color="secondary">Click Me!</Button>
+  </ComponentGenerator>
+</Section>
+
+### Sizes
+
+Button sizes allow you to adjust the dimensions of buttons to fit different layouts and design requirements.
+
+<Tabs items={["Preview", "Code"]}>
+  <Tabs.Tab>
+    <Section>
+      <ButtonSizesDemo />
+    </Section>
+  </Tabs.Tab>
+  <Tabs.Tab>
+    <ButtonSizesDemoSource />
+  </Tabs.Tab>
+</Tabs>
+
+### Shapes
+
+###### TODO: Add shapes demo
+
+### Loading and Disabled States
+
+###### TODO: Add loading and disabled states demo
+
+## Api
+
+<Table>
+  <thead className="border-0">
+    <Table.Tr>
+      <Table.Th>Property</Table.Th>
+      <Table.Th>Description</Table.Th>
+      <Table.Th>Type</Table.Th>
+      <Table.Th>Default</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>variant</Table.Td>
+      <Table.Td>
+        The variant of the button, which determines its style and behavior.
+      </Table.Td>
+      <Table.Td>string</Table.Td>
+      <Table.Td>default</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
