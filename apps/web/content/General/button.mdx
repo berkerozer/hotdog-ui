@@ -1,0 +1,43 @@
+import { Tabs } from "nextra/components";
+import { Colors, ComponentGenerator, Section } from "@/components/docs";
+import {
+  ButtonVariantsDemo,
+  ButtonVariantsDemoSource,
+} from "@/components/demo/button/variants";
+
+# Button
+
+To trigger an operation.
+
+## When To Use
+
+A button means an operation (or a series of operations). Clicking a button will trigger its corresponding business logic.
+
+In Hotdog-Ui we provide 6 types of button.
+
+- 🔵 Primary button: used for the main action, there can be at most one primary button in a section.
+- ⚪️ Ghost button: used for a series of actions without priority.
+- 🔳 Outlined button: used for actions with a clear boundary.
+- 😶 Dashed button: commonly used for adding more actions.
+- 🔤 Text button: used for the most secondary action.
+- 🔗 Link button: used for external links.
+
+And we provide 2 animations for buttons.
+
+- 🏃‍♂️ Ripple: creates a wave effect on click.
+- 🏃‍♀️ Pulse: makes the button grow and shrink continuously.
+
+Colors are also customizable, you can choose from:
+
+<Colors />
+
+## Examples
+
+<Tabs items={["Preview", "Code"]}>
+  <Tabs.Tab>
+    <Section>
+      <ButtonVariantsDemo />
+    </Section>
+  </Tabs.Tab>
+  <Tabs.Tab>{ButtonVariantsDemoSource}</Tabs.Tab>
+</Tabs>
