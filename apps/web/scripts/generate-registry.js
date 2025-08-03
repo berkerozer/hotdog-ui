@@ -23,10 +23,13 @@ async function main() {
       const componentName = json.name || path.basename(path.dirname(file));
       const out = {
         name: componentName,
-        type: "components:ui",
+        type: "registry:ui",
         dependencies: json.dependencies,
         devDependencies: json.devDependencies,
         peerDependencies: json.peerDependencies,
+        registryDependencies: json.registryDependencies,
+        css: json.css,
+        cssVars: json.cssVars,
         files: [],
         author: "Berker Özer <berker.ozer@meanalytics.io>",
       };

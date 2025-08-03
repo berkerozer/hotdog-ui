@@ -20,15 +20,24 @@
     "@radix-ui/react-slot",
     "class-variance-authority"
   ],
-  "registryDependencies": ["button"],
+  "registryDependencies": [],
+  "css": {},
   "cssVars": {
     "light": {
-      "brand-background": "20 14.3% 4.1%",
-      "brand-accent": "20 14.3% 4.1%"
+      "--primary": "oklch(0.6 0.118 184.704)",
+      "--primary-foreground": "oklch(0.985 0 0)",
+      "--danger": "oklch(0.577 0.245 27.325)",
+      "--danger-foreground": "oklch(0.985 0 0)"
     },
     "dark": {
-      "brand-background": "20 14.3% 4.1%",
-      "brand-accent": "20 14.3% 4.1%"
+      "--primary": "oklch(0.6 0.118 184.704)",
+      "--primary-foreground": "oklch(0.985 0 0)",
+      "--danger": "oklch(0.577 0.245 27.325)",
+      "--danger-foreground": "oklch(0.985 0 0)"
+    },
+    "theme": {
+      "--color-danger": "var(--danger)",
+      "--color-danger-foreground": "var(--danger-foreground)"
     }
   }
 }
