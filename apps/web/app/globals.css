@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import "@repo/tailwind-config";
-@import "@repo/ui/styles.css";
+@import "hotdogui/styles.css";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));

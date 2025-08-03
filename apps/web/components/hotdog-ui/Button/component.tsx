@@ -1,5 +1,5 @@
 import React from "react";
-import { Ripple } from "@repo/ui/ripple";
+import { Ripple } from "hotdogui/ripple";
 import { Button as BaseButton } from "@/components/ui/button";
 
 export interface ButtonProps

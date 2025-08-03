@@ -75,9 +75,6 @@ importers:
       '@radix-ui/react-slot':
         specifier: ^1.2.3
         version: 1.2.3(@types/react@19.1.0)(react@19.1.0)
-      '@repo/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
       '@tabler/icons-react':
         specifier: ^3.34.1
         version: 3.34.1(react@19.1.0)
@@ -87,6 +84,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      hotdogui:
+        specifier: 0.0.0-dev
+        version: 0.0.0-dev(react@19.1.0)
       lucide-react:
         specifier: ^0.536.0
         version: 0.536.0(react@19.1.0)
@@ -232,9 +232,6 @@ importers:
       eslint:
         specifier: ^9.31.0
         version: 9.31.0(jiti@2.5.1)
-      radix-ui:
-        specifier: ^1.4.2
-        version: 1.4.2(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       tailwindcss:
         specifier: ^4.1.5
         version: 4.1.11
@@ -2754,6 +2751,11 @@ packages:
 
   highlightjs-vue@1.0.0:
     resolution: {integrity: sha512-PDEfEF102G23vHmPhLyPboFCD+BkMGu+GuJe2d9/eH4FsCwvgBpnc9n0pGE+ffKdph38s6foEZiEjdgHdzp+IA==}
+
+  hotdogui@0.0.0-dev:
+    resolution: {integrity: sha512-WNf92wZOxF40N11P1NbiBMMNE74GSX/h0FcNquN+lddMFXcFi0DtKqEbUUKVhhBbivwIjgiXhUNawHz972NiVw==}
+    peerDependencies:
+      react: ^19
 
   html-void-elements@3.0.0:
     resolution: {integrity: sha512-bEqo66MRXsUGxWHV5IP0PUiAWwoEjba4VCzg0LjFJBpchPaTfyfCKTG6bc5F8ucKec3q5y6qOdGyYTSBEvhCrg==}
@@ -7123,6 +7125,10 @@ snapshots:
   highlight.js@10.7.3: {}
 
   highlightjs-vue@1.0.0: {}
+
+  hotdogui@0.0.0-dev(react@19.1.0):
+    dependencies:
+      react: 19.1.0
 
   html-void-elements@3.0.0: {}
 

@@ -5,13 +5,9 @@ import { CodeBlock } from "@/components/ui/code-block";
 export const ButtonSizesDemo = () => {
   return (
     <div className="flex gap-2">
-      <Button size="default" shape="rounded">
-        Default
-      </Button>
+      <Button size="default">Default</Button>
       <Button size="sm">Small</Button>
-      <Button size="lg" shape="square">
-        Large
-      </Button>
+      <Button size="lg">Large</Button>
       <Button size="icon" shape="circle">
         Icon
       </Button>
