@@ -1,0 +1,14 @@
+Property,Description,Type,Default
+variant,The variant of the button,default | ghost | outline | dashed | text | link ,default
+animation,Set the animation of button,none | ripple | pulse | button | shine,ripple
+block,Option to fit button width to its parent width,boolean,false
+classNames,Semantic DOM class,"Record<SemanticDOM, string>",-
+color,Set button color,primary | secondary | danger | warning | success | sharp | info | muted | accent,primary
+disabled,Disabled state of button,boolean,false
+type,Set the original html type of button,submit | reset | button,button
+loading,Set the loading status of button,boolean,false
+shape,Can be used to set button shape,rounded | square | circle,rounded
+size,Set the size of button,default | large | small | icon,default
+styles,Semantic DOM style,"Record<SemanticDOM, CSSProperties>",-
+onClick,Set the handler to handle click event,"(event: React.MouseEvent<HTMLElement, MouseEvent>) => void",-
+asChild,"If true, the button will not render a button element, but instead render its children as the root element",boolean,false

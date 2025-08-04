@@ -1,0 +1,80 @@
+[
+  {
+    "Property": "variant",
+    "Description": "The variant of the button",
+    "Type": "default | ghost | outline | dashed | text | link ",
+    "Default": "default"
+  },
+  {
+    "Property": "animation",
+    "Description": "Set the animation of button",
+    "Type": "none | ripple | pulse | button | shine",
+    "Default": "ripple"
+  },
+  {
+    "Property": "block",
+    "Description": "Option to fit button width to its parent width",
+    "Type": "boolean",
+    "Default": "false"
+  },
+  {
+    "Property": "classNames",
+    "Description": "Semantic DOM class",
+    "Type": "Record<SemanticDOM, string>",
+    "Default": "-"
+  },
+  {
+    "Property": "color",
+    "Description": "Set button color",
+    "Type": "primary | secondary | danger | warning | success | sharp | info | muted | accent",
+    "Default": "primary"
+  },
+  {
+    "Property": "disabled",
+    "Description": "Disabled state of button",
+    "Type": "boolean",
+    "Default": "false"
+  },
+  {
+    "Property": "type",
+    "Description": "Set the original html type of button",
+    "Type": "submit | reset | button",
+    "Default": "button"
+  },
+  {
+    "Property": "loading",
+    "Description": "Set the loading status of button",
+    "Type": "boolean",
+    "Default": "false"
+  },
+  {
+    "Property": "shape",
+    "Description": "Can be used to set button shape",
+    "Type": "rounded | square | circle",
+    "Default": "rounded"
+  },
+  {
+    "Property": "size",
+    "Description": "Set the size of button",
+    "Type": "default | large | small | icon",
+    "Default": "default"
+  },
+  {
+    "Property": "styles",
+    "Description": "Semantic DOM style",
+    "Type": "Record<SemanticDOM, CSSProperties>",
+    "Default": "-"
+  },
+  {
+    "Property": "onClick",
+    "Description": "Set the handler to handle click event",
+    "Type": "(event: React.MouseEvent<HTMLElement, MouseEvent>) => void",
+    "Default": "-"
+  },
+  {
+    "Property": "asChild",
+    "Description": "If true, the button will not render a button element, but instead render its children as the root element",
+    "Type": "boolean",
+    "Default": "false"
+  }
+]

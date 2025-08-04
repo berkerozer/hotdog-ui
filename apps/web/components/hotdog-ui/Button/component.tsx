@@ -17,7 +17,8 @@ export interface ButtonProps
   variant?: "default" | "ghost" | "outline" | "dashed" | "text" | "link";
   animation?: "ripple" | "pulse" | "shine" | "press" | "none";
   size?: "default" | "sm" | "lg" | "icon";
-  shape?: "rounded" | "square" | "circle";
+  shape?: "rounded" | "square" | "circle" | "pill";
+  loading?: boolean;
 }
 
 export const Button = ({
@@ -26,6 +27,7 @@ export const Button = ({
   variant = "default",
   size = "default",
   shape = "rounded",
+  loading = false,
   style,
   children,
   ...props
@@ -52,6 +54,7 @@ export const Button = ({
       shape={shape}
       {...props}
     >
+      {loading && <span className="loader animate-in" />}
       {children}
       {animation === "ripple" && (
         <Ripple

@@ -38,6 +38,7 @@ const buttonVariants = cva(
         rounded: "rounded-md",
         square: "rounded-none",
         circle: "rounded-full size-9",
+        pill: "rounded-full",
       },
     },
     defaultVariants: {
