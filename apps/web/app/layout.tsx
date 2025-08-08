@@ -2,6 +2,7 @@ import { Head } from "nextra/components";
 
 import "nextra-theme-docs/style.css";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata = {
   // Define your metadata here
@@ -27,7 +28,10 @@ export default async function RootLayout({
       >
         {/* Your additional tags should be passed as `children` of `<Head>` element */}
       </Head>
-      <body>{children}</body>
+      <body>
+        <Toaster />
+        {children}
+      </body>
     </html>
   );
 }

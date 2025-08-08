@@ -6,7 +6,12 @@ export default {
     title: "Components",
     type: "separator",
   },
-  General: {},
+  general: {
+    title: "General",
+  },
+  feedback: {
+    title: "Feedback",
+  },
   "---": {
     type: "separator",
   },

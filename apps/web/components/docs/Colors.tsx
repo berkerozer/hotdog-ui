@@ -2,7 +2,7 @@ import React from "react";
 
 export const Colors = () => {
   return (
-    <div className="flex space-x-2">
+    <div className="flex flex-wrap gap-3">
       <div className="flex space-x-1 items-center px-2 py-1 rounded-full bg-primary">
         <span className="text-sm text-primary-foreground">Primary</span>
       </div>

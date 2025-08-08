@@ -1,0 +1,138 @@
+import { Tabs } from "nextra/components";
+import { ComponentGenerator, Section, Props } from "@/components/docs";
+import {
+  MessageDemo,
+  MessageDemoSource,
+} from "@/components/hotdog-ui/message/demo/normal";
+import {
+  MessageTypesDemo,
+  MessageTypesDemoSource,
+} from "@/components/hotdog-ui/message/demo/types";
+import {
+  MessageStackDemo,
+  MessageStackDemoSource,
+} from "@/components/hotdog-ui/message/demo/stack";
+import {
+  MessageLoadingDemo,
+  MessageLoadingDemoSource,
+} from "@/components/hotdog-ui/message/demo/loading";
+import {
+  MessageDurationDemo,
+  MessageDurationDemoSource,
+} from "@/components/hotdog-ui/message/demo/duration";
+import {
+  MessageCustomIconDemo,
+  MessageCustomIconDemoSource,
+} from "@/components/hotdog-ui/message/demo/customIcon";
+import {
+  MessageSoundDemo,
+  MessageSoundDemoSource,
+} from "@/components/hotdog-ui/message/demo/withSound";
+
+# Message
+
+Display global messages as feedback in response to user operations.
+
+## When To Use
+
+- To provide feedback such as success, warning, error etc.
+- A message is displayed at top and center and will be dismissed automatically, as a non-interrupting light-weighted prompt.
+
+## Installation
+
+```sh npm2yarn
+npx shadcn@latest add https://hotdogui.com/registry/message.json
+```
+
+## Examples
+
+<Tabs items={["Preview", "Code"]}>
+  <Tabs.Tab>
+    <Section>
+      <MessageDemo />
+    </Section>
+  </Tabs.Tab>
+  <Tabs.Tab>
+    <MessageDemoSource />
+  </Tabs.Tab>
+</Tabs>
+
+### Message Types
+
+<Tabs items={["Preview", "Code"]}>
+  <Tabs.Tab>
+    <Section>
+      <MessageTypesDemo />
+    </Section>
+  </Tabs.Tab>
+  <Tabs.Tab>
+    <MessageTypesDemoSource />
+  </Tabs.Tab>
+</Tabs>
+
+### CustomIcon
+
+<Tabs items={["Preview", "Code"]}>
+  <Tabs.Tab>
+    <Section>
+      <MessageCustomIconDemo />
+    </Section>
+  </Tabs.Tab>
+  <Tabs.Tab>
+    <MessageCustomIconDemoSource />
+  </Tabs.Tab>
+</Tabs>
+
+### Duration
+
+<Tabs items={["Preview", "Code"]}>
+  <Tabs.Tab>
+    <Section>
+      <MessageDurationDemo />
+    </Section>
+  </Tabs.Tab>
+  <Tabs.Tab>
+    <MessageDurationDemoSource />
+  </Tabs.Tab>
+</Tabs>
+
+### Message Stack
+
+<Tabs items={["Preview", "Code"]}>
+  <Tabs.Tab>
+    <Section>
+      <MessageStackDemo />
+    </Section>
+  </Tabs.Tab>
+  <Tabs.Tab>
+    <MessageStackDemoSource />
+  </Tabs.Tab>
+</Tabs>
+
+### Loading Message
+
+<Tabs items={["Preview", "Code"]}>
+  <Tabs.Tab>
+    <Section>
+      <MessageLoadingDemo />
+    </Section>
+  </Tabs.Tab>
+  <Tabs.Tab>
+    <MessageLoadingDemoSource />
+  </Tabs.Tab>
+</Tabs>
+
+### With Sound
+
+<Tabs items={["Preview", "Code"]}>
+  <Tabs.Tab>
+    <Section>
+      <MessageSoundDemo />
+    </Section>
+  </Tabs.Tab>
+  <Tabs.Tab>
+    <MessageSoundDemoSource />
+  </Tabs.Tab>
+</Tabs>
+
+## Api
