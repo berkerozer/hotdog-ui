@@ -6,7 +6,7 @@ export default {
     title: "Components",
     type: "separator",
   },
-  general: {
+  g: {
     title: "General",
   },
   feedback: {
